@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tic Tac Toe - using MiniMax Algorithm</title>
+  </head>
+
+  <body>
+    
+    <h1>AI powered Tic Tac Toe</h1>
+    <br/>
+    <br/>
+    <h2>Using Minimax Algorithm </h2>
+
+    <h3 id="result">Result will be displayed here</h3>
+
+    <div class="board-container">
+      <table class="tic-tac-toe-table" cellspacing="0">
+        <tr>
+          <td id="00" onclick="clickMove(this)"></td>
+          <td id="01" onclick="clickMove(this)"></td>
+          <td id="02" onclick="clickMove(this)"></td>
+        </tr>
+        <tr>
+          <td id="10" onclick="clickMove(this)"></td>
+          <td id="11" onclick="clickMove(this)"></td>
+          <td id="12" onclick="clickMove(this)"></td>
+        </tr>
+        <tr>
+          <td id="20" onclick="clickMove(this)"></td>
+          <td id="21" onclick="clickMove(this)"></td>
+          <td id="22" onclick="clickMove(this)"></td>
+        </tr>
+      </table>
+    </div>
+    <br/>
+    <br/>
+    <div class="control-container">
+      <button type="button" id="btn-play" onclick="playCompFirst(this)">Play Computer First</button>
+      <button type="button" id="btn-restart" onclick="restartGame(this)"> Restart</button>
+    </div>
+
+    <script type="text/javascript" src="main.js" ></script>
+  </body>
+</html>
